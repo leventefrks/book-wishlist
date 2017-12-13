@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #bbb;
+}
+
+.App{
+    background-color: #303f9f;
+    padding: 20px;
+}
+
+.main-container{
+  background-color:#eee;
+}
+
+.title{
+    color: #303f9f;
+    text-align: center;
+}
+
+.book-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.book-item{
+    background-color: white;
+    list-style-type: none;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.book-item:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.book-item--title, .book-item--author{
+    text-align: center;
+}
+
+.book-item--title{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.book-item--author{
+    font-size: 1em;
+}
+
+.book-item img{
+    display: block;
+    margin: 0 auto;
+}
+
+.book-item img{
+    width: 100px;
+    height: 120px;
+}
+
+.fa-heart{
+    color: #FF4081;
+    float: right;
+}
+
+.fa-trash{
+    color: black;
+}
